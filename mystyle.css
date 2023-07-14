@@ -1,1 +1,45 @@
+/*****
+目次ボタンクリックでtop_containerを開く
+*****/
 
+#tocopen:checked+.toc_container{
+  display:block;
+  padding:45px;
+  border:4pxsolidtan;
+}
+
+/*****
+チェックボックスと開閉する目次ボックスは非表示
+*****/
+
+.toc_container,.l_toc input[type="checkbox"]{
+  display:none;
+}
+
+/*****目次*****/
+
+/l_toc{
+  width:95%;
+  max-width:500px;
+  margin:30px auto;
+  position:relative;
+  top:38px;
+  left:0;
+}
+
+.l_toc label{
+  background-color:tan;
+  padding:10px;
+  position:absolute;
+  top:-40px;
+  left:0;
+}
+
+.toc_container{
+  background-color:#fff;
+  width:100%;
+}
+
+.toc_container ol>li{
+  margin:10px 0px;
+}
