@@ -35,6 +35,7 @@
 table{
     border-collapse:collapse;
 }
-td{
+td,th{
+    padding:8px 20px;
     border:1px solid #b7b7b7;
 }
