@@ -34,10 +34,10 @@
 
 table{
     border-collapse:collapse;
-    width:800px;
+    width:1200px;
 }
 td,th{
-    padding:8px 20px;
+    padding:6px 15px;
     border:1px solid #b7b7b7
 }
 thead th{
