@@ -39,7 +39,7 @@ td,th{
     padding:8px 20px;
     border:1px solid #b7b7b7
 }
-thead{
+thead th{
     background:#2c8daa;
 }
 tbody tr:nth-child(2n){
