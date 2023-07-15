@@ -3,7 +3,9 @@
 *****/
 
 #tocopen:checked+.toc_container{
+  color:#242424;
   display:block;
+  margin:30pxauto;
   padding:45px;
   border:4pxsolidtan;
 }
@@ -11,8 +13,10 @@
 /*****
 チェックボックスと開閉する目次ボックスは非表示
 *****/
-
-.toc_container,.l_toc input[type="checkbox"]{
+.toc_container{
+  display:none;
+}
+.l_toc input[type="checkbox"]{
   display:none;
 }
 
