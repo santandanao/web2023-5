@@ -1,49 +1,33 @@
-/*****
-目次ボタンクリックでtop_containerを開く
-*****/
-
-#tocopen:checked+.toc_container{
-  color:#242424;
-  display:block;
-  margin:30pxauto;
-  padding:45px;
-  border:4pxsolidtan;
+/*== 開閉式もくじ ==*/
+.contents_box {
+    padding: 10px;
+    font-size:1rem;/*タイトルのフォントサイズ*/
+    color:#696969;/*タイトルの文字色*/
+    background-color:#fff;/*背景色*/
+    border:1px solid #696969;/*外枠線- 色*/
 }
 
-/*****
-チェックボックスと開閉する目次ボックスは非表示
-*****/
-.toc_container{
-  display:none;
-}
-.l_toc input[type="checkbox"]{
-  display:none;
-}
-
-/*****目次*****/
-
-/l_toc{
-  width:95%;
-  max-width:500px;
-  margin:30px auto;
-  position:relative;
-  top:38px;
-  left:0;
+/*== 開閉文字装飾 ==*/
+.contents_box label {
+    padding: 5px;
+    color:#0000ff; /*文字色*/
+    font-size:1rem;/*フォントサイズ*/
+    cursor:pointer;
+    border-bottom: 1px dotted #0000ff;/*下線*/
 }
 
-.l_toc label{
-  background-color:tan;
-  padding:10px;
-  position:absolute;
-  top:-40px;
-  left:0;
-}
+/*開く*/
+.contents_box label:before{
+    display: inline-block;
+    content: "[ 開く ]";/*"表示"などに変更可*/}
+/*閉じる*/
+.contents_box input:checked ~ label:before {
+     content: "[ 閉じる ]";/*"非表示"などに変更可*/}
 
-.toc_container{
-  background-color:#fff;
-  width:100%;
-}
-
-.toc_container ol>li{
-  margin:10px 0px;
-}
+.contents_box input{display:none;}
+/*最初は非表示*/
+.contents_box .hidden_show
+{height:0;padding:0;overflow:hidden;transition:0.8s;}
+/*クリックでopen*/
+.contents_box input:checked ~ .hidden_show
+{padding: 10px 0;height:auto;}
