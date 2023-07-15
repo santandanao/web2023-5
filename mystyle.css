@@ -1,4 +1,4 @@
-/*== 開閉式もくじ ==*/
+ /*== 開閉式もくじ ==*/
 .contents_box {
     padding: 10px;
     font-size:1rem;/*タイトルのフォントサイズ*/
@@ -52,5 +52,10 @@ header{
     margin:0 auto;
 }
 .logo{
-    margin:50px
+    margin:50px auto;
+    width:346px;
+    height:82px;
+    baccground:url(./image/無題166_20230716012554.png);
+    font-size:0;
+}
 
