@@ -47,4 +47,10 @@ thead th{
 tbody tr:nth-child(2n){
     background:#ecfafc;
 }
+header{
+    max-width:1000px;
+    margin:0 auto;
+}
+.logo{
+    margin:50px
 
