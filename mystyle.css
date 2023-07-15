@@ -41,6 +41,7 @@ td,th{
 }
 thead th{
     background:#2c8daa;
+    color:#fff;
 }
 tbody tr:nth-child(2n){
     background:#ecfafc;
