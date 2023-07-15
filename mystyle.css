@@ -47,5 +47,8 @@ thead th{
 tbody tr:nth-child(2n){
     background:#ecfafc;
 }
+body{
+ background-color:#fff2e5;
+}
 
 
