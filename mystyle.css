@@ -31,3 +31,10 @@
 /*クリックでopen*/
 .contents_box input:checked ~ .hidden_show
 {padding: 10px 0;height:auto;}
+
+table{
+    border-collapse:collapse;
+}
+td{
+    border:1px solid #b7b7b7;
+}
