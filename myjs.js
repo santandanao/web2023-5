@@ -4,34 +4,30 @@ function showTime(){
   formElem.output1.value=today.toLocaleString();
 }
 
-//クイズデータ
-const quizDate=[
+// クイズデータ
+const quizData = [
   {
-    question:'こたけ正義感は現役○○芸人？',
-    choices:['医師','税理士','弁護士','消防士'],
-    answer:'弁護士'
-},
-{
-  question:'ファイヤーサンダーこてつの従兄弟は誰？',
-  choices:['マヂカルラブリー 野田クリスタル','ジェラードン かみちぃ','ランジャタイ 伊藤幸司','さらば青春の光 東ブクロ'],
-  answer:'さらば青春の光 東ブクロ'
-},
+    question: '日本の首都はどこ？',
+    choices: ['東京', '大阪', '名古屋', '福岡'],
+    answer: '東京'
+  },
   {
-    question:'フワちゃんと同期なのは？',
-    choices:['ぱーてぃーちゃん','土佐兄弟','クマムシ','サツマカワRPG'],
-    answer:'土佐兄弟'
+    question: '富士山は何県にある？',
+    choices: ['静岡県', '山梨県', '神奈川県', '長野県'],
+    answer: '静岡県'
   }
-  ];
+  // 他の問題を追加
+];
 
-//変数定理
-let currentQuestionIndex=0;
-let score=0;
+// 変数定義
+let currentQuestionIndex = 0;
+let score = 0;
 
-//HTML要素の取得
-const questionEL=document.getElementById('question');
-const choicesEL=document.getElementById('choices');
-const nextBtn=document.getElementById('nextBtn');
-const scoreEL=document.getElementById('score');
+// HTML要素の取得
+const questionEl = document.getElementById('question');
+const choicesEl = document.getElementById('choices');
+const nextBtn = document.getElementById('nextBtn');
+const scoreEl = document.getElementById('score');
 
 // 問題を表示する関数
 function showQuestion() {
