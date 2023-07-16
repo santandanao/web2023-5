@@ -1,22 +1,21 @@
-function showTime(){
-  var formElem=document.getElementById("form");
-  today=new Date();
-  formElem.output1.value=today.toLocaleString();
-}
-
 // クイズデータ
 const quizData = [
   {
-    question: '日本の首都はどこ？',
-    choices: ['東京', '大阪', '名古屋', '福岡'],
-    answer: '東京'
+    question: 'こたけ正義感は現役〇〇芸人？',
+    choices: ['医師', '税理士', '弁護士', '消防士'],
+    answer: '弁護士'
   },
   {
-    question: '富士山は何県にある？',
-    choices: ['静岡県', '山梨県', '神奈川県', '長野県'],
-    answer: '静岡県'
+    question: 'ファイヤーサンダーのこてつの従兄弟は誰？',
+    choices: ['野田クリスタル（マヂカルラブリー）', 'かみちぃ（ジェラードン）', '伊藤幸司（ランジャタイ）', '東ブクロ（さらば青春の光）'],
+    answer: '東ブクロ（さらば青春の光）'
+  },
+  {
+    question: 'フワちゃんと同期なのは？',
+    choices: ['ぱーてぃーちゃん','土佐兄弟','クマムシ','サツマカワRPG'],
+    answer: '土佐兄弟'
   }
-  // 他の問題を追加
+      
 ];
 
 // 変数定義
