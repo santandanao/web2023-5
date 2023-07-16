@@ -1,5 +1,5 @@
 function showTime(){
-  var formElem=document.getElementById("form1");
+  var formElem=document.getElementById("form");
   today=new Date();
   formElem.output1.value=today.toLocaleString();
 }
