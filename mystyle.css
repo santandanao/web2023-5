@@ -53,5 +53,9 @@ tbody tr:nth-child(2n){
 body{
  background-color:#fff2e5;
 }
-
+forecast{
+ border:5px solid #5abbe4;
+ padding:25px;
+ wigth:300px;
+}
 
