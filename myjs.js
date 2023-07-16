@@ -38,4 +38,7 @@ function getCookie(keyname){
 //クッキーに値を書き込む関数
 function setCookie(keyname,val){
   var tmp=kayname+"="+escape(val)+";";
-  tmp+="expires=M
+  tmp+="expires=Mon,31-Dec-2015 23:59:59;";
+  document.cookie=tmp;
+}
+  
