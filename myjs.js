@@ -4,3 +4,8 @@ function showTime(){
   formElem.output1.value=today.toLocaleString();
 }
 
+//クイズデータ
+const quizDate=[
+  {
+    question:''
+
